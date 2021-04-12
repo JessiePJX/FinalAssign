@@ -63,7 +63,7 @@ a{ text-decoration: none;}
 	.header .nav li a{ font-size: 18px;}
 	
 	.banner .show h2{ font-size: 35px;}
-	.banner .btn a{ font-size: 12px;}
+	.banner .btn a{font-size: 12px; }
 	
 	.list .item .box_right{font-size: 25px;}
 	
@@ -75,7 +75,6 @@ a{ text-decoration: none;}
 	
 	#list h1{ font-size: 18px; padding: 20px 0;}
 	#list h2{ font-size: 16px; margin-bottom: 20px; margin-top: 12px;}
-	
 	#list .item{ padding: 30px 20px;}
 	#list .item .box{flex-flow: wrap;}
 	#list .item .box_left{width: 100%;}
@@ -95,9 +94,6 @@ a{ text-decoration: none;}
 	.banner .show{ margin-top:5%; }
 	.banner .show h2{ font-size: 14px; margin-bottom: 10px;}
 	.banner .show a{width: 100px; height: 30px; line-height: 30px; font-size: 12px;}
-	
-	
-	
 	.banner .show2{width: 300px; line-height: 60px; font-size: 13px; border-radius: 60px;}
 }
 
