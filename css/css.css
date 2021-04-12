@@ -1,14 +1,13 @@
 *{padding:0; margin:0; border:none; outline: none;}
-ul,li{ list-style-type: none;}
 a{ text-decoration: none;}
 .header{width: 100%; height: 80px; line-height: 80px; padding: 0 2%; box-sizing: border-box; overflow: hidden; 
-	background: rgba(255,255,255,0.75); position: fixed; top: 0; z-index: 99;}
+	background: rgba(255,255,255,0.8); position: fixed; top: 0; z-index: 99;}
 .header .logo{font-family: Gochi Hand; float: left; font-size: 30px; font-weight: bold; color: #4e334a;}
 .header .nav{ float: right;}
-.header .nav li{ float: left; padding-left: 30px; line-height: 70px;}
-.header .nav li a{font-family: Nunito Sans; font-size:20px; color: #4e334a; font-weight: bold; position: relative;}
-.header .nav li a::before{ width: 100%; height: 2px; content: '';  display: inline-block; 
-	background: #4e334a; position: absolute; bottom: -10px; transition: transform 0.5s; transform: scaleX(0); transform-origin: right;}
+.header .nav li{list-style: none; float: left; padding-left: 30px; line-height: 80px;}
+.header .nav li a{list-style: none; font-family: Nunito Sans; font-size:20px; color: #4e334a; font-weight: bold; position: relative;}
+.header .nav li a::before{list-style: none; width: 100%; height: 2px; content: '';  display: inline-block; 
+	background: #4e334a; position: absolute; bottom: -3px; transition: transform 0.5s; transform: scaleX(0); transform-origin: right;}
 .header .nav li a:hover::before{transform: scaleX(1);}
 .header .nav li.on a::before{transform: scaleX(1);}
 
@@ -16,44 +15,51 @@ a{ text-decoration: none;}
 .banner img{display: block; width: 100%;}
 .banner .show{width: auto; padding: 4%; background: rgba(255,255,255,0.75); 
 	border-radius: 20px;  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
-.banner .show h2{font-family: Nunito Sans; font-size: 50px; color: #4e334a; margin-bottom: 30px; text-align: center;}
-.banner .show a{display: block; width: 255px; height: 80px; color: #4e334a; font-family: Nunito Sans; font-size: 30px; font-weight: bold; 
-	text-align: center; line-height: 80px; border-radius: 80px; border: 2px solid #4e334a; margin: 0 auto;}
-.banner .btn{ width: 100%; height: auto; overflow: hidden; position: absolute; bottom: 3%; text-align: center;}
-.banner .btn a{font-size: 18px; color: #fff;}
+.banner .show h2{font-weight:700; font-family: Nunito Sans; font-size: 50px; color: #4e334a; margin-bottom: 30px; text-align: center;}
+.banner .show a{display: block; width: 200px; height: 70px; color: #4e334a; font-family: Nunito Sans; font-size: 30px; font-weight: bold; 
+	text-align: center; line-height: 70px; border-radius: 70px; border: 2px solid #4e334a; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
+	.banner .show a:hover{background: #fcf8ef; border: 2px solid #4e334a;}
+.banner .btn{ width: 100%; height: auto; overflow: hidden; position: absolute; bottom: 2%; text-align: center;}
+.banner .btn a{font-family: Nunito Sans; font-size: 18px; color:  rgba(255,255,255,0.75);}
+.banner .btn a #arrow{width:2%; height: auto; margin-left: auto; margin-right: auto; opacity: 0.75;}
 .banner .show2{width: 700px; line-height: 150px; border-radius: 150px; font-family: Nunito Sans; font-size: 30px; color: #4e334a; 
 	text-align: center; border-radius: 80px; background: rgba(255,255,255,0.75);  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
 
-.list{width: 100%; height: auto; overflow: hidden; }
-.list h1{font-family: Nunito Sans; font-size: 58px; color: #4e334a; text-align: center; padding: 50px 0;}
-.list h2{font-family: Nunito Sans; max-width: 1200px; height: auto; overflow: hidden; margin: 0 auto; color: #4e334a; margin-bottom: 48px;}
-.list .item{width:100%; height: auto; overflow: hidden; padding: 50px 20px; box-sizing: border-box; background: #fcf8ef;}
-.list .item .box{max-width: 1200px; margin: 0 auto;  display: flex; justify-content: space-between;}
-.list .item .box_left{width: 45%;}
-.list .item .box_left img{width: 100%; border-radius: 10px;}
-.list .item .box_right{width: 50%; font-family: Montserrat; font-size: 22px; line-height: 1.5; text-align: justify;}
-.list .item:nth-child(2n){background: #f4f8fb;}
-.list .item:nth-child(2n) .box{ flex-direction:row-reverse;}
+/* anxiety relievers page */
+#list{width: 100%; height: auto; overflow: hidden; }
+#list h1{font-family: Nunito Sans; font-size: 58px; color: #4e334a; text-align: center; padding-top: 100px; padding-bottom: 25px;}
+#list h2{font-family: Nunito Sans; max-width: 1200px; height: auto; overflow: hidden; margin: 0 auto; color: #4e334a; margin-bottom: 50px; margin-top: 60px;}
+#list .item{width:100%; height: auto; overflow: hidden; padding-top: 25px; padding-bottom: 100px; box-sizing: border-box; background: #fcf8ef;}
+#list .item .box{max-width: 1200px; margin: 0 auto;  display: flex; justify-content: space-between;}
+#list .item .box_left{width: 45%;}
+#list .item .box_left img{width: 100%; border-radius: 10px; filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25)); border-radius: 10px;}
+#list .item .box_right{margin-top: auto; margin-bottom: auto; width: 50%; font-family: Montserrat; font-size: 22px; line-height: 1.5; text-align: justify;}
+#list .item:nth-child(2n){background: #f4f8fb;}
+#list .item:nth-child(2n) .box{ flex-direction:row-reverse;}
 
+/* anxiety disorder page */
 .article{width: 100%; height: auto; overflow: hidden; }
-.article .item{width: 100%; height: auto; overflow: hidden; padding: 50px 0; background: #fcf8ef;}
+.article .item{width: 100%; height: auto; overflow: hidden; padding: 100px 0; background: #fcf8ef;}
 .article .item h2{font-family: Nunito Sans; font-size: 25px; color: #4e334a; text-align: center; padding-bottom: 30px;}
 .article .item:nth-child(2n){background: #f4f8fb;}
-.article .item p{max-width: 1000px; margin: 0 auto; text-align: justify; padding:0 20px; font-family: Montserrat; font-size: 22px; line-height: 1.8;}
+.article .item p{max-width: 1000px; margin: 0 auto; text-align: center; padding:0 20px; font-family: Montserrat; font-size: 22px; line-height: 1.8;}
+.article .item ul{display: block; margin-left: auto; margin-right: auto; width: 42%;
+	max-width: 1000px; text-align: left; padding:0 20px; font-family: Montserrat; font-size: 22px; line-height: 1.8;}
+.article .item p a{font-family: Montserrat; font-size: 22px; line-height: 1.8; color: #4e334a; font-weight: bold;}
+.article .item p a:hover{font-weight: normal;}
 
-.footer{width: 100%; padding: 30px 10px; box-sizing: border-box; background: #fcf8ef; text-align: center; font-size: 16px;}
+.footer{width: 100%; padding: 30px 10px; box-sizing: border-box; background: #fcf8ef; text-align: center; font-family: Nunito Sans; font-size: 16px;}
+.footer a{color: black;}
+.footer a:hover {text-decoration: underline;}
 
 
-@media (max-width: 1100px) {
-	.banner .show h2{ font-size: 40px;}
-	.list .item .box_right{font-size: 28px;}
-}
-
-
-@media (max-width: 992px) {
-	.header{ height: 60px; line-height: 60px;}
-	.header .logo{ font-size: 28px;}
-	.header .nav li{ line-height: 50px;}
+/* media inquiries */
+@media (max-width: 1024px) {
+	.banner .show h2{ font-size: 40px; }
+	#list .item .box_right{font-size: 28px;}
+	.header{ height: 45px; line-height: 60px; }
+	.header .logo{ font-size: 28px; top: 20px;}
+	.header .nav li{ line-height: 40px;}
 	.header .nav li a{ font-size: 18px;}
 	
 	.banner .show h2{ font-size: 35px;}
@@ -62,9 +68,19 @@ a{ text-decoration: none;}
 	.list .item .box_right{font-size: 25px;}
 	
 	.article .item{ padding: 20px 0;}
-	.article .item h2{ font-size: 18px; padding-bottom: 20px;}
-	.article .item p{ font-size: 13px;}
+	.article .item h2{ font-size: 18px; padding-bottom: 10px; padding-top: 20px;}
+	.article .item p{ font-size: 13px; padding-bottom: 20px;}
+	.article .item p a { font-size: 13px;}
+	.article .item ul{ font-size: 13px; padding-bottom: 20px;}
 	
+	#list h1{ font-size: 18px; padding: 20px 0;}
+	#list h2{ font-size: 16px; margin-bottom: 20px; margin-top: 12px;}
+	
+	#list .item{ padding: 30px 20px;}
+	#list .item .box{flex-flow: wrap;}
+	#list .item .box_left{width: 100%;}
+	#list .item .box_right{width: 100%; margin-top: 20px; font-size: 13px;}
+
 	.footer{ font-size: 13px;}
 	
 	.banner .show2{width: 400px; line-height: 60px; font-size: 20px; border-radius: 16px;}
@@ -72,26 +88,16 @@ a{ text-decoration: none;}
 
 
 @media (max-width: 768px) {
-	.header .logo{ font-size: 16px;}
+	.header .logo{ font-size: 14px; line-height: 45px;}
 	.header .nav li{ padding-left: 10px;}
 	.header .nav li a{ font-size: 12px;}
 	
-	.banner .show{ margin-top:5%;}
+	.banner .show{ margin-top:5%; }
 	.banner .show h2{ font-size: 14px; margin-bottom: 10px;}
 	.banner .show a{width: 100px; height: 30px; line-height: 30px; font-size: 12px;}
 	
-	.list h1{ font-size: 18px; padding: 20px 0;}
-	.list h2{ font-size: 16px; margin-bottom: 20px;}
 	
-	.list .item{ padding: 30px 20px;}
-	.list .item .box{ flex-flow: wrap;}
-	.list .item .box_left{width: 100%;}
-	.list .item .box_right{width: 100%; margin-top: 20px; font-size: 13px;}
 	
 	.banner .show2{width: 300px; line-height: 60px; font-size: 13px; border-radius: 60px;}
 }
 
-
-@media (max-width: 576px) {
-	
-}
